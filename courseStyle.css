@@ -1,0 +1,74 @@
+body{
+    background-color: #85B4FF;
+}
+h1{
+    color: white;
+}
+strong{
+    color: #2175FF;
+}
+table{
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-color: white;
+    background-color: #B5D1FF;
+    border-style: dotted;
+    border-width: 5px;
+    width: 900px;
+}
+.courseul{
+    list-style-type: none;
+    margin-left: 0px;
+    padding-left: 0px;
+    text-align: center;
+}
+.courseli{
+    margin-left: 0px;
+    padding-left: 0px;
+    list-style-position: inside;
+}
+
+#container{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#toCourse{
+    background-color: #85B4FF;
+    border-style: dotted;
+    border-color: white;
+    font-size: 25px;
+    width: 100px;
+    height: 70px;
+    text-align: center;
+}
+
+.thsize{
+    width: 50px;
+}
+.surrBox{
+    border-style: dotted;
+    border-width: 5px;
+    padding: 5px 5px 5px 5px;
+    position: relative;
+    overflow:auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #B5D1FF;
+    border-color: white;
+    overflow: hidden;
+}
+.extra{
+    border-style: dotted;
+    border-width: 2px;
+    border-color: #E6EFFF;
+    position: relative;
+    float: left;
+    width: 200px;
+    padding: 0px 5px 5px 5px;
+    margin-left: 5px;
+
+}
+.hideme{
+    display: none;
+}

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>mySchedule: Computer Science</title>
+    <script type="text/javascript" src="jQuery/jquery-1.4.2.js"></script>
+    <script type="text/javascript" src="jQuery/dragsort-0.3.10/jquery.dragsort-0.3.10.js"></script>
+    <script type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="courseStyle.css" />
+</head>
+<body>
+    <div id="container">
+    <h1>MyCourseScheduler</h1>
+    <div class="surrBox">
+    <h2>What to do:</h2>
+    <p>Currently, the courses are listed in the order given by the CS Department on their website
+        and on their course worksheet. Drag and Drop the curriculum to your will,
+        and see how your future will turn out! </p>
+    <p><strong>Remember</strong>: these are only the requirements, you may have taken
+        classes above and beyond this. Also, place the course in the quarter that you
+        finished it.</p>
+    <p> * Options for Grad Students are on the bottom, since they apply to later years.</p>
+    </div>
+   
+    <div id="optionsbox" class="surrBox">
+        <h2>Options:</h2>
+        <p>Click the headings to see their options</p>
+        <div id="highschool" class="extra">
+            <h4 id="hscred">High School Credit</h4>
+            <div id="hscreddiv" class="hideme">
+                <p>Before coming to college, some students take AP courses, and get
+                rid of some credits. You can drag those credits here.
+                <ul class="courseul" id="hs"></ul>
+                </p>
+            </div>
+            <script type="text/javascript">
+                $("#hscred").click(function(){
+                    $("#hscreddiv").slideToggle("fast");
+                })
+            </script>
+        </div>    
+        <div class="extra">
+            <h4 id="altcalc">Alternate Calculus Track</h4>
+            <div id="altcalcdiv" class="hideme">
+                <p>The Alternate Calculus track either starts with Calc A or Intro
+                to calculus. You can also start at Calc II, or maybe Calc III based
+                on scores on tests. All Calculus Sequences end with Calc III.
+                <ul class="courseul" id="calc">
+                    <li class="courseli">Intro to Calc</li>
+                    <li class="courseli">Calc A</li>
+                    <li class="courseli">Calc B</li>
+                    <li class="courseli">Calc C</li>
+                </ul>
+                </p>
+            </div>
+            <script type="text/javascript">
+                $("#altcalc").click(function(){
+                    $("#altcalcdiv").slideToggle("fast");
+                })
+            </script>
+        </div>
+        <div class="extra">
+            <h4 id="altcs">Alternate CS Track</h4>
+            <div id="altcsdiv" class="hideme">
+                <p>Some students take AP CS in high school, and can then jump ahead
+                into CS for AP, which covers CS1-3 in a quarter, then goes into CS4.
+                Another option some take is to go into CS2 at the start.
+                <ul class="courseul" id="cs">
+                    <li class="courseli">CS for AP</li>
+                </ul>
+                </p>
+            </div>
+            <script type="text/javascript">
+                $("#altcs").click(function(){
+                    $("#altcsdiv").slideToggle("fast");
+                })
+            </script>
+        </div>
+        <div class="extra">
+            <h4 id="temp">Temporary Holding</h4>
+            <div id="tempdiv" class="hideme">
+                <p>You can place requirements you want to debate on, feel free to
+                place them here
+                <ul class="courseul" id="hold">
+                </ul>
+                </p>
+            </div>
+            <script type="text/javascript">
+                $("#temp").click(function(){
+                    $("#tempdiv").slideToggle("fast");
+                })
+            </script>
+        </div>
+    </div>
+
+    <table border="5">
+        <tr>
+            <td></td>
+            <th>Fall</th>
+            <th>Winter</th>
+            <th>Spring</th>
+            <th>Summer</th>
+        </tr>
+        <tr>
+            <th>Year I</th>
+            <td> <ul class="courseul" id="101">
+                <li class="courseli">Computer Science I</li>
+                <li class="courseli">Calculus I</li>
+                <li class="courseli">Writing Seminar</li>
+                <li class="courseli">Arts of Expression</li>
+                <li class="courseli">FYE I</li>
+                </ul></td>
+            <td><ul class="courseul" id="102">
+                <li class="courseli">Computer Science II</li>
+                <li class="courseli">Calculus II</li>
+                <li class="courseli">Discrete Math I</li>
+                <li class="courseli">Ethics</li>
+                <li class="courseli">FYE II</li>
+                </ul></td>
+            <td><ul class="courseul" id="103">
+                <li class="courseli">Computer Science III</li>
+                <li class="courseli">Calculus III</li>
+                <li class="courseli">Discrete Math II</li>
+                <li class="courseli">LA: Social Science</li>
+                <li class="courseli">Wellness Activity</li>
+                </ul></td>
+            <td><ul class="courseul" id="104">
+                </ul></td
+        </tr>
+        <tr>
+            <th>Year II</th>
+            <td><ul class="courseul" id="201">
+                <li class="courseli">Prof Comm</li>
+                <li class="courseli">Computer Science IV</li>
+                <li class="courseli">Probability</li>
+                <li class="courseli">Lab Science</li>
+                <li class="courseli">Wellness Acvivity</li>
+                </ul></td>
+            <td><ul class="courseul" id="202">
+                <li class="courseli">Software Engineering</li>
+                <li class="courseli">Lab Science</li>
+                <li class="courseli">LA: Social Science</li>
+                <li class="courseli">LA: Humanities</li>
+                </ul></td>
+            <td> <ul class="courseul" id="203">
+                <li class="courseli">Computer Organization</li>
+                <li class="courseli">Lab Science</li>
+                <li class="courseli">LA: Humanities</li>
+                <li class="courseli">LA: Minor/Concent.</li>
+                </ul></td>
+            <td> <ul class="courseul" id="204">
+                 </ul></td>
+        </tr>
+        <tr>
+            <th>Year III</th>
+            <td><ul class="courseul" id="301">
+                <li class="courseli">Intro to CS Theory</li>
+                <li class="courseli">Science Elective</li>
+                <li class="courseli">LA: Minor/Concent.</li>
+                </ul></td>
+            <td><ul class="courseul" id="302">
+                <li class="courseli">Operating Systems I</li>
+                <li class="courseli">Science Elective</li>
+                <li class="courseli">LA: Minor/Concent.</li>
+                </ul></td>
+            <td><ul class="courseul" id="303">
+                <li class="courseli">Co-Op 1</li>
+                </ul></td>
+            <td><ul class="courseul" id="304">
+                <li class="courseli">Co-Op 2</li>
+                </ul></td>
+        </tr>
+        <tr>
+            <th>Year IV</th>
+            <td><ul class="courseul" id="401">
+                <li class="courseli">Data Comm & Networks I</li>
+                <li class="courseli">LA: Minor/UpperLevel</li>
+                <li class="courseli">Related Elective</li>
+                </ul></td>
+            <td><ul class="courseul" id="402">
+                <li class="courseli">PLC</li>
+                <li class="courseli">LA: Minor/UpperLevel</li>
+                <li class="courseli">Related Elective</li>
+                </ul></td>
+            <td><ul class="courseul" id="403">
+                <li class="courseli">Co-Op 3</li>
+                </ul></td>
+            <td><ul class="courseul" id="404">
+                <li class="courseli">Co-Op 4</li>
+                </ul></td>
+        </tr>
+        <tr>
+            <th>Year V</th>
+            <td><ul class="courseul" id="501">
+                <li class="courseli">CS Related Elective</li>
+                <li class="courseli">CS Elective I</li>
+                <li class="courseli">LA: UpperLevel</li>
+                <li class="courseli">Related Elective</li>
+                </ul></td>
+            <td><ul class="courseul" id="502">
+                <li class="courseli">CS Related Elective</li>
+                <li class="courseli">CS Elective</li>
+                <li class="courseli">Free Elective</li>
+                <li class="courseli">Free Elective</li>
+                </ul></td>
+            <td><ul class="courseul" id="503">
+                <li class="courseli">CS Elective</li>
+                <li class="courseli">CS Elective</li>
+                <li class="courseli">Free Elective</li>
+                </ul></td>
+            <td><ul class="courseul" id="504">
+                <li class="courseli">Graduate</li>
+                </ul></td>
+        </tr>
+        <tr>
+            <th>Year VI</th>
+            <td><ul class="courseul" id="g01"></ul></td>
+            <td><ul class="courseul" id="g02"></ul></td>
+            <td><ul class="courseul" id="g03"></ul></td>
+            <td><ul class="courseul" id="go4"></ul></td>
+        </tr>
+        <tr>
+            <th>Year VII</th>
+            <td><ul class="courseul" id="g11"></ul></td>
+            <td><ul class="courseul" id="g12"></ul></td>
+            <td><ul class="courseul" id="g13"></ul></td>
+            <td><ul class="courseul" id="g14"></ul></td>
+        </tr>
+    </table>
+    <div id="grad" class="surrBox">
+            <h2>Graduate Options (click to see) </h2>
+            <div id="graddiv" class="hideme">
+                <div class="extra">
+                    <h4>Core Courses</h4>
+                    <ul class="courseul" id="gcore">
+                        <li class="courseli">Theory of Algorithms</li>
+                        <li class="courseli">Graduate Seminar</li>
+                        <li class="courseli">Cluster Course</li>
+                        <li class="courseli">Cluster Course</li>
+                        <li class="courseli">Cluster Course</li>
+                        <li class="courseli">Cluster Course</li>
+                        <li class="courseli">Grad CS Elective</li>
+                        <li class="courseli">Grad CS Elective</li>
+                        <li class="courseli">Grad CS Elective</li>
+                        <li class="courseli">Grad CS Elective</li>
+                    </ul>
+                </div>
+                <div class="extra">
+                    <h4>Thesis Track</h4>
+                    <ul class="courseul" id="gthesis">
+                        <li class="courseli">Thesis</li>
+                    </ul>
+                </div>
+                <div class="extra">
+                    <h4>Project Track</h4>
+                    <ul class="courseul" id="gproject">
+                        <li class="courseli">Grad-P CS Elective</li>
+                        <li class="courseli">Project</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <input name="listSortOrder" type="hidden" />
+    <script type="text/javascript">
+        $("#gcore, #gthesis, #gproject, #g01, #g02, #g03, #g04, #g11, #g12, #g13, #g14, #hs, #hold, #opt, #calc, #cs, #101, #102, #103, #104, #201, #202, #203, #204, #301, #302, #303, #304, #401, #402, #403, #404, #501, #502, #503, #504").dragsort({ dragSelector: "li", dragBetween: true, dragEnd: saveOrder});
+
+        function saveOrder(){
+            var serialStr = "";
+            $("#101 li").each(function(i, elm) {serialStr += (i > 0 ? "|" : "") + $(elm).children().html(); });
+            $("input[name=listSortOrder]").val(serialStr);
+        };
+    </script>
+    <script type="text/javascript">
+        $("#grad").click(function(){
+            $("#graddiv").slideToggle("fast");
+        })
+    </script>
+ 
+</body>
+</html>

@@ -1,0 +1,185 @@
+[
+    {
+        "label": "High School",
+        "quarters": [
+            {
+                "label": "hs",
+                "list": []
+            }
+        ]
+    },
+    
+    {
+        "label": "Year I",
+        "quarters": [
+            {
+                "label": "101",
+                "list": [
+                    "Computer Science 1",
+                    "Calculus 1",
+                    "Liberal Arts",
+                    "Liberal Arts",
+                    "FYE I"
+                ]
+            },
+            {
+                "label": "102",
+                "list": [
+                    "Computer Science 2",
+                    "Calculus II",
+                    "Discrete Math I",
+                    "Liberal Arts",
+                    "FYE II"
+                ]
+            },
+            {
+                "label": "103",
+                "list": [
+                    "Computer Science 3",
+                    "Calculus III",
+                    "Discrete Math II",
+                    "Liberal Arts",
+                    "Wellness Activity I"
+                ]
+            },
+            {
+                "label" : "104",
+                "list" : []
+            }
+        ]
+    },
+    {
+        "label" : "Year II",
+        "quarters" : [
+            {
+                "label" : "201",
+                "list": [
+                    "Prof Communications",
+                    "Computer Science 4",
+                    "Probability",
+                    "Lab Science",
+                    "Wellness Activity 1"          
+                ]
+            },
+            {
+                "label" : "202",
+                "list":[
+                    "Software Engineering",
+                    "Lab Science",
+                    "Liberal Arts",
+                    "Liberal Arts"
+                ]
+            },
+            {
+                "label" : "203",
+                "list":[
+                    "Computer Organization",
+                    "Lab Science",
+                    "Liberal Arts",
+                    "Liberal Arts"
+                ]
+            },
+            {
+                "label" : "204",
+                "list":[]
+            }
+        ]
+    },
+    {
+        "label":"Year III",
+        "quarters": [
+            {
+                "label" : "301",
+                "list":[
+                    "CS Theory",
+                    "Science Elective",
+                    "Liberal Arts" 
+                ]
+            },
+            {
+                "label" : "302",
+                "list" : [
+                    "OS I",
+                    "Science Elective",
+                    "Liberal Arts"
+                ]
+            },
+            {
+                "label" : "303",
+                "list" : [
+                    "Co-Op I"
+                ]
+            },
+            {
+                "label" : "304",
+                "list" : [
+                    "Co-Op II"
+                ]
+            }
+        ]
+    },
+    {
+        "label":"Year IV",
+        "quarters":[
+            {
+                "label" : "401",
+                "list" : [
+                    "Data Comm I",
+                    "Liberal Arts",
+                    "Related Elective"
+                ]
+            },
+            {
+                "label" : "402",
+                "list" : [
+                    "PLC",
+                    "Liberal Arts",
+                    "Related Elective"
+                ]
+            },
+            {
+                "label" : "403",
+                "list" : [
+                    "Co-Op 3"
+                ]
+            },
+            {
+                "label" : "404",
+                "list" : [
+                    "Co-Op 4"
+                ]
+            }
+        ]
+    },
+    {
+        "label" : "Year V",
+        "quarters" : [
+            {
+                "label" : "501",
+                "list" : [
+                    "CS Related Elective I",
+                    "CS Elective I",
+                    "Liberal Arts",
+                    "Related Elective"
+                ]
+            },
+            {
+                "label" : "502",
+                "list" : [
+                    "CS Related Elective II",
+                    "CS Elective II",
+                    "Free Elective",
+                    "Free Elective"
+                ]
+            },
+            {
+                "label" : "503",
+                "list" : [
+                    "CS Elective III",
+                    "CS Elective IV",
+                    "Free Elective"
+                ]
+            }
+        ]
+    }
+]
